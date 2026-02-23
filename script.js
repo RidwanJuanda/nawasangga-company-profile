@@ -12,8 +12,15 @@ document.querySelectorAll('a[href^="#"]').forEach((a) => {
 });
 
 const links = Array.from(document.querySelectorAll('.nav-link'));
-const sections = links
-  .map((l) => document.querySelector(l.getAttribute('href')))
+const sectionLinks = links.filter((l) => {
+  const href = l.getAttribute('href') || '';
+  return href.startsWith('#');
+});
+const sections = sectionLinks
+  .map((l) => {
+    const href = l.getAttribute('href');
+    try { return document.querySelector(href); } catch { return null; }
+  })
   .filter(Boolean);
 
 const setActive = () => {
@@ -26,12 +33,43 @@ const setActive = () => {
   links.forEach((l) => l.classList.remove('active'));
   if (current) {
     const id = '#' + current.id;
-    const active = links.find((l) => l.getAttribute('href') === id);
+    const active = sectionLinks.find((l) => l.getAttribute('href') === id);
     active?.classList.add('active');
   }
 };
-setActive();
-window.addEventListener('scroll', setActive);
+if (sections.length > 0) {
+  setActive();
+  window.addEventListener('scroll', setActive);
+}
+
+// Path/hash based nav activation (works across pages)
+const activateByPathHash = () => {
+  const navLinks = Array.from(document.querySelectorAll('.nav-link'));
+  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  const currentHash = window.location.hash;
+
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+    const href = link.getAttribute('href') || '';
+
+    // 1. HOME
+    if (href === 'index.html' && currentPage === 'index.html' && currentHash === '') {
+      link.classList.add('active');
+    }
+    // 2. ABOUT (index.html#about)
+    if (href.includes('#about') && currentPage === 'index.html' && currentHash === '#about') {
+      link.classList.add('active');
+    }
+    // 3. SERVICES (page) atau halaman lain selain index
+    if (href === currentPage && currentPage !== 'index.html') {
+      link.classList.add('active');
+    }
+  });
+};
+if (sections.length === 0) {
+  activateByPathHash();
+  window.addEventListener('hashchange', activateByPathHash);
+}
 
 const toggle = document.querySelector('.nav-toggle');
 toggle?.addEventListener('click', () => {
