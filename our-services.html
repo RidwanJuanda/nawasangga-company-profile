@@ -1,113 +1,231 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nawasangga — Innovative Solutions</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="images/ic-logo-ns-only.png" />
-    <link rel="icon" type="image/png" sizes="48x48" href="images/ic-logo-ns-only.png" />
-    <link rel="icon" type="image/png" sizes="64x64" href="images/ic-logo-ns-only.png" />
-    <link rel="apple-touch-icon" href="images/ic-logo-ns-only.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nawasangga — Innovative Solutions</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/ic-logo-ns-only.png" />
+  <link rel="icon" type="image/png" sizes="48x48" href="images/ic-logo-ns-only.png" />
+  <link rel="icon" type="image/png" sizes="64x64" href="images/ic-logo-ns-only.png" />
+  <link rel="apple-touch-icon" href="images/ic-logo-ns-only.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
 <body>
   <header class="site-header" id="header">
-      <div class="container nav">
-        <a href="#" class="brand">
-          <img loading="lazy" src="images/ic-logo-ns-only.png" alt="Nawasangga" />
-          <span class="brand-text">NAWASANGGA</span>
-        </a>
-        <nav class="main-nav" aria-label="Primary">
-          <ul>
-            <li><a class="nav-link" href="index.html">Home</a></li>
-            <li><a class="nav-link" href="index.html#about">About Us</a></li>
-            <li><a class="nav-link" href="our-services.html">Services</a></li>
-            <li><a class="nav-link" href="#projects">Projects</a></li>
-            <li><a class="nav-link" href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-        <a href="#contact" class="btn btn-cta">Let’s Talk</a>
-        <button class="nav-toggle" aria-label="Toggle menu">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </header>
+    <div class="container nav">
+      <a href="#" class="brand">
+        <img loading="lazy" src="images/ic-logo-ns-only.png" alt="Nawasangga" />
+        <span class="brand-text">NAWASANGGA</span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="index.html#about">About Us</a></li>
+          <li><a class="nav-link" href="our-services.html">Services</a></li>
+          <li><a class="nav-link" href="index.html#projects">Projects</a></li>
+          <li><a class="nav-link" href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="index.html#contact" class="btn btn-cta">Let’s Talk</a>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
 
   <main>
     <section class="services-hero">
       <div class="hero-bg" aria-hidden="true"></div>
       <div class="container hero-container">
         <h1>OUR SERVICES</h1>
-        <p class="subtitle">Delivering Cutting‑Edge Solutions for Your Business Needs</p>
+        <p class="subtitle">
+          Delivering Cutting‑Edge Solutions for Your Business Needs
+        </p>
       </div>
     </section>
 
     <section class="services" aria-label="Our Services">
-      <div class="services-bg" aria-hidden="true"></div>
+      <div class="services-bg"></div>
       <div class="container">
         <div class="services-grid">
           <article class="service-card">
-            <div class="service-art">
-              <img loading="lazy" src="images/banner-led-videotron.png" alt="LED Display Solutions" 
-            style="width: 512px; height: 512; border-radius: 12px;" />
-            </div>
-            <p>High‑quality LED display solutions for advertising and events.</p>
-            <a href="index.html#contact" class="btn btn-primary">Learn More</a>
+            <img loading="lazy" src="images/banner-led-videotron.png" alt="LED Display" />
+            <h3 class="blue">LED Display Solutions</h3>
+            <p>
+              High-quality LED display solutions for advertising and events.
+            </p>
+            <a href="javascript:void(0)" class="btn blue" onclick="openPopup('ledPopup')">Learn More</a>
           </article>
+
           <article class="service-card">
-            <div class="service-art">
-              <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="26" fill="url(#g2)"/><defs><linearGradient id="g2" x1="0" y1="1" x2="1" y2="0"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#f59e0b"/></linearGradient></defs></svg>
-            </div>
-            <h3>Event Production</h3>
-            <p>Comprehensive event production from planning to execution.</p>
-            <a href="index.html#contact" class="btn btn-primary">Learn More</a>
+            <img loading="lazy" src="images/banner-production.png" alt="Event Production" />
+            <h3 class="purple">Event Production</h3>
+            <p>
+              Comprehensive event production services from planning to
+              execution.
+            </p>
+            <a href="javascript:void(0)" class="btn purple" onclick="openPopup('eventProductionPopup')">Learn More</a>
           </article>
+
           <article class="service-card">
-            <div class="service-art">
-              <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="26" fill="url(#g3)"/><defs><linearGradient id="g3" x1="0" y1="1" x2="1" y2="0"><stop offset="0%" stop-color="#f97316"/><stop offset="100%" stop-color="#38bdf8"/></linearGradient></defs></svg>
-            </div>
-            <h3>Creative Marketing</h3>
-            <p>Innovative strategies to boost brand visibility and engagement.</p>
-            <a href="index.html#contact" class="btn btn-primary">Learn More</a>
+            <img loading="lazy" src="images/banner-field-marketing.png" alt="Creative Marketing" />
+            <h3 class="orange">Creative Marketing</h3>
+            <p>
+              Innovative marketing strategies to boost your brand visibility.
+            </p>
+            <a href="index.html#contact" class="btn orange">Learn More</a>
           </article>
+
           <article class="service-card">
-            <div class="service-art">
-              <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="26" fill="url(#g4)"/><defs><linearGradient id="g4" x1="0" y1="1" x2="1" y2="0"><stop offset="0%" stop-color="#0ea5e9"/><stop offset="100%" stop-color="#7c3aed"/></linearGradient></defs></svg>
-            </div>
-            <h3>Audio Visual & Lighting</h3>
-            <p>State‑of‑the‑art AV and lighting services for various events.</p>
-            <a href="index.html#contact" class="btn btn-primary">Learn More</a>
+            <img loading="lazy" src="images/banner-events.png" alt="Audio Visual" />
+            <h3 class="blue">Audio Visual & Lighting</h3>
+            <p>
+              State-of-the-art AV and lighting services for various events.
+            </p>
+            <a href="index.html#contact" class="btn blue">Learn More</a>
           </article>
+
           <article class="service-card">
-            <div class="service-art">
-              <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="26" fill="url(#g5)"/><defs><linearGradient id="g5" x1="0" y1="1" x2="1" y2="0"><stop offset="0%" stop-color="#60a5fa"/><stop offset="100%" stop-color="#f59e0b"/></linearGradient></defs></svg>
-            </div>
-            <h3>Video Production</h3>
-            <p>Professional video production services to capture your vision.</p>
-            <a href="index.html#contact" class="btn btn-primary">Learn More</a>
+            <img loading="lazy" src="images/banner-production.png" alt="Video Production" />
+            <h3 class="purple">Video Production</h3>
+            <p>
+              Professional video production services to capture your vision.
+            </p>
+            <a href="index.html#contact" class="btn purple">Learn More</a>
           </article>
+
           <article class="service-card">
-            <div class="service-art">
-              <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="26" fill="url(#g6)"/><defs><linearGradient id="g6" x1="0" y1="1" x2="1" y2="0"><stop offset="0%" stop-color="#38bdf8"/><stop offset="100%" stop-color="#f97316"/></linearGradient></defs></svg>
-            </div>
-            <h3>Design Services</h3>
+            <img loading="lazy" src="images/banner-design-services.png" alt="Design Services" />
+            <h3 class="orange">Design Services</h3>
             <p>Creative design solutions to elevate your brand presence.</p>
-            <a href="index.html#contact" class="btn btn-primary">Learn More</a>
+            <a href="index.html#contact" class="btn orange">Learn More</a>
           </article>
         </div>
+
         <div class="services-cta">
-          <p>Let us take your business to the next level with our expertise.</p>
-          <a href="index.html#contact" class="btn btn-cta">Get In Touch</a>
+          <p>
+            Let us take your business to the next level with our expertise.
+          </p>
+          <a href="index.html#contact" class="btn cta">GET IN TOUCH</a>
         </div>
       </div>
     </section>
+
+    <!-- LED Display Solutions Popup Modal -->
+    <div class="modal-overlay" id="ledPopup">
+      <div class="modal-content">
+        <button class="modal-close" onclick="closePopup('ledPopup')" aria-label="Close popup">
+          &times;
+        </button>
+        <div class="modal-slider-container">
+          <div class="modal-slides" id="ledSlides">
+            <!-- Slide 1 -->
+            <div class="modal-slide">
+              <img loading="lazy" src="images/led-videotron/img-led1.png" alt="Videotron" />
+              <h4>Videotron Installation</h4>
+              <p>
+                High quality outdoor and indoor videotron displays for
+                impactful advertising that grabs attention instantly.
+              </p>
+            </div>
+            <!-- Slide 2 -->
+            <div class="modal-slide">
+              <img loading="lazy" src="images/led-videotron/img-led2.png" alt="Billboard LED" />
+              <h4>LED Billboards</h4>
+              <p>
+                Dynamic LED billboard solutions that ensure maximum visibility
+                day and night for your brand.
+              </p>
+            </div>
+            <!-- Slide 3 -->
+            <div class="modal-slide">
+              <img loading="lazy" src="images/led-videotron/img-led3.png" alt="Event LED" />
+              <h4>Event LED Backdrop</h4>
+              <p>
+                Custom LED screen setups designed specifically for concerts,
+                conferences, and live events to elevate the stage.
+              </p>
+            </div>
+          </div>
+          <button class="modal-prev" aria-label="Previous image" onclick="moveSlide('ledSlides', -1)">
+            &#10094;
+          </button>
+          <button class="modal-next" aria-label="Next image" onclick="moveSlide('ledSlides', 1)">
+            &#10095;
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Events Solutions Popup Modal -->
+    <div class="modal-overlay" id="eventProductionPopup">
+      <div class="modal-content">
+        <button class="modal-close" onclick="closePopup('eventProductionPopup')" aria-label="Close popup">
+          &times;
+        </button>
+        <div class="modal-slider-container">
+          <div class="modal-slides" id="eventProductionSlides">
+            <!-- Slide 1 -->
+            <div class="modal-slide">
+              <img loading="lazy" src="images/led-videotron/img-led1.png" alt="Videotron" />
+              <h4>Videotron Installation</h4>
+              <p>
+                High quality outdoor and indoor videotron displays for
+                impactful advertising that grabs attention instantly.
+              </p>
+            </div>
+            <!-- Slide 2 -->
+            <div class="modal-slide">
+              <img loading="lazy" src="images/led-videotron/img-led2.png" alt="Billboard LED" />
+              <h4>LED Billboards</h4>
+              <p>
+                Dynamic LED billboard solutions that ensure maximum visibility
+                day and night for your brand.
+              </p>
+            </div>
+            <!-- Slide 3 -->
+            <div class="modal-slide">
+              <img loading="lazy" src="images/led-videotron/img-led3.png" alt="Event LED" />
+              <h4>Event LED Backdrop</h4>
+              <p>
+                Custom LED screen setups designed specifically for concerts,
+                conferences, and live events to elevate the stage.
+              </p>
+            </div>
+          </div>
+          <button class="modal-prev" aria-label="Previous image" onclick="moveSlide('eventProductionSlides', -1)">
+            &#10094;
+          </button>
+          <button class="modal-next" aria-label="Next image" onclick="moveSlide('eventProductionSlides', 1)">
+            &#10095;
+          </button>
+        </div>
+      </div>
+    </div>
   </main>
+
+  <!-- Footer section -->
+  <footer class="site-footer" id="contact">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img loading="lazy" src="images/ic-logo-ns-transparan.png" alt="Nawasangga" />
+        <div class="footer-text-vertical">
+          <p>Innovative & Creative Business Solutions</p>
+          <p>&copy; 2025 NAWASANGGA. All rights reserved.</p>
+        </div>
+      </div>
+      <div class="footer-cta">
+        <a href="mailto:ahmad@nawasangga.co.id" class="btn btn-cta invert">Let’s Talk</a>
+      </div>
+    </div>
+  </footer>
   <script src="script.js"></script>
 </body>
+
 </html>
