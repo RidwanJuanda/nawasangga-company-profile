@@ -319,7 +319,40 @@ body{
   color:#0ea5e9;
 }
 .feature-list p{ margin:.25rem 0 0; color: var(--muted) }
+.contact {
+  padding: 100px 20px;
+  text-align: center;
+  background:
+    radial-gradient(1200px 500px at 50% -20%, rgba(56,189,248,.35), transparent 60%),
+    radial-gradient(900px 400px at 100% 10%, rgba(139,92,246,.3), transparent 65%),
+    linear-gradient(180deg, #F8FAFC, #FFFFFF);
+}
 
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.contact-card {
+  background: #fff;
+  padding: 32px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(15,23,42,.08);
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 14px 32px;
+  border-radius: 999px;
+  color: #fff;
+  background: linear-gradient(135deg, #38BDF8, #8B5CF6);
+  text-decoration: none;
+  font-weight: 600;
+}
 .vision{
   margin-top: 28px;
   padding: 28px 22px 34px;
@@ -402,15 +435,6 @@ body{
   box-shadow: var(--shadow);
 }
 
-/* Wave spacer */
-.spacer .wave{
-  height: 160px;
-  background:
-    radial-gradient(60% 120px at 0% 100%, rgba(56,189,248,.25), transparent 70%),
-    radial-gradient(60% 120px at 100% 100%, rgba(139,92,246,.25), transparent 70%),
-    linear-gradient(180deg, rgba(2,6,23,0), rgba(2,6,23,.04));
-}
-
 /* Footer */
 .site-footer{
   background: linear-gradient(90deg, var(--accent), var(--primary));
@@ -454,6 +478,15 @@ body{
     white-space: nowrap;
     box-shadow: 0 6px 16px rgba(2,6,23,.08), 0 3px 10px rgba(2,6,23,.06);
   }
+  /* About responsive */
+  .about{ padding: 36px 0 16px }
+  .about-grid{ gap: 18px }
+  .about-card{ order: 1 }
+  .about-visual{ order: 2 }
+  .about-visual img{ width: 100%; height: auto; display: block }
+  .feature-list{ gap: 12px }
+  .feature-list li{ grid-template-columns: 32px 1fr }
+  .feature-list .icon{ width:32px; height:32px }
 }
 
 @media (max-width: 540px){
@@ -461,6 +494,14 @@ body{
     padding: 6px 10px;
     font-size: 12px;
   }
+  /* About tighter mobile spacing */
+  .about{ padding: 28px 0 12px }
+  .about-grid{ gap: 14px }
+  .about-card{ padding: 20px }
+  .about-card h2{ font-size: clamp(20px, 4.8vw, 24px) }
+  .about-card .lead{ font-size: 14px }
+  .feature-list li{ grid-template-columns: 28px 1fr }
+  .feature-list .icon{ width:28px; height:28px }
   .footer-inner{
     flex-direction: column;
     align-items: center;
@@ -494,4 +535,9 @@ body{
     padding: 6px 8px;
     font-size: 11px;
   }
+  /* About small phones */
+  .about-card{ padding: 16px }
+  .about-card h2{ font-size: 20px }
+  .feature-list li{ grid-template-columns: 26px 1fr }
+  .feature-list .icon{ width:26px; height:26px }
 }

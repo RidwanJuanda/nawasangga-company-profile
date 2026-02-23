@@ -38,6 +38,14 @@ toggle?.addEventListener('click', () => {
   document.querySelector('.main-nav')?.classList.toggle('open');
 });
 
+document.querySelectorAll('a.cta[target="_blank"]').forEach((a) => {
+  a.addEventListener('click', (e) => {
+    e.preventDefault();
+    const href = a.getAttribute('href');
+    if (href) window.open(href, '_blank');
+  });
+});
+
 (function () {
     'use strict';
 
