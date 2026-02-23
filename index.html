@@ -1,210 +1,238 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nawasangga — Innovative Solutions</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="images/ic-logo-ns-only.png" />
-    <link rel="icon" type="image/png" sizes="48x48" href="images/ic-logo-ns-only.png" />
-    <link rel="icon" type="image/png" sizes="64x64" href="images/ic-logo-ns-only.png" />
-    <link rel="apple-touch-icon" href="images/ic-logo-ns-only.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header class="site-header" id="header">
-      <div class="container nav">
-        <a href="#" class="brand">
-          <img loading="lazy" src="images/ic-logo-ns-only.png" alt="Nawasangga" />
-          <span class="brand-text">NAWASANGGA</span>
-        </a>
-        <nav class="main-nav" aria-label="Primary">
-          <ul>
-            <li><a class="nav-link" href="#home">Home</a></li>
-            <li><a class="nav-link" href="#about">About Us</a></li>
-            <li><a class="nav-link" href="our-services.html">Services</a></li>
-            <li><a class="nav-link" href="#projects">Projects</a></li>
-            <li><a class="nav-link" href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-        <a href="#contact" class="btn btn-cta">Let’s Talk</a>
-        <button class="nav-toggle" aria-label="Toggle menu">
-          <span></span><span></span><span></span>
-        </button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nawasangga — Innovative Solutions</title>
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico">
+
+  <!-- Apple -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <!-- Chrome / Android -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+
+  <!-- PWA -->
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- Safari -->
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#38BDF8">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="site-header" id="header">
+    <div class="container nav">
+      <a href="#" class="brand">
+        <img loading="lazy" src="images/ic-logo-ns-only.png" alt="Nawasangga" />
+        <span class="brand-text">NAWASANGGA</span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#about">About Us</a></li>
+          <li><a class="nav-link" href="our-services.html">Services</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="#contact" class="btn btn-cta">Let’s Talk</a>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-label="Hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Innovative Solutions for Your Business</h1>
+          <p>
+            Empowering businesses with cutting‑edge solutions and expert services to drive
+            growth and success.
+          </p>
+          <div class="hero-actions">
+            <a href="#services" class="btn btn-primary">Our Services</a>
+            <a href="#about" class="btn btn-outline">Learn More</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="hero-banner-slider" aria-label="Hero Slider">
+            <img loading="lazy" src="images/banner-led-videotron.png" alt="Hero Banner LED Videotron"
+              class="hero-banner-image active" />
+            <img loading="lazy" src="images/banner-billboard.png" alt="Hero Banner Billboard"
+              class="hero-banner-image" />
+            <img loading="lazy" src="images/banner-events.png" alt="Hero Banner Events" class="hero-banner-image" />
+            <img loading="lazy" src="images/banner-field-marketing.png" alt="Hero Banner Field Marketing"
+              class="hero-banner-image" />
+            <img loading="lazy" src="images/banner-production.png" alt="Hero Banner Production"
+              class="hero-banner-image" />
+            <img loading="lazy" src="images/banner-design-services.png" alt="Hero Banner Design Services"
+              class="hero-banner-image" />
+          </div>
+          <button class="slider-btn prev" aria-label="Sebelumnya">
+            <span>‹</span>
+          </button>
+          <button class="slider-btn next" aria-label="Selanjutnya">
+            <span>›</span>
+          </button>
+          <div class="slider-dots" role="tablist" aria-label="Navigasi slide"></div>
+        </div>
       </div>
-    </header>
+      <div class="hero-bg" aria-hidden="true"></div>
+    </section>
 
-    <main>
-      <section class="hero" id="home" aria-label="Hero">
-        <div class="container hero-inner">
-          <div class="hero-copy">
-            <h1>Innovative Solutions for Your Business</h1>
-            <p>
-              Empowering businesses with cutting‑edge solutions and expert services to drive
-              growth and success.
-            </p>
-            <div class="hero-actions">
-              <a href="#services" class="btn btn-primary">Our Services</a>
-              <a href="#about" class="btn btn-outline">Learn More</a>
-            </div>
-          </div>
-          <div class="hero-image">
-            <div class="hero-banner-slider" aria-label="Hero Slider">
-              <img loading="lazy" src="images/banner-led-videotron.png" alt="Hero Banner LED Videotron" class="hero-banner-image active" />
-              <img loading="lazy" src="images/banner-billboard.png" alt="Hero Banner Billboard" class="hero-banner-image" />
-              <img loading="lazy" src="images/banner-events.png" alt="Hero Banner Events" class="hero-banner-image" />
-              <img loading="lazy" src="images/banner-field-marketing.png" alt="Hero Banner Field Marketing" class="hero-banner-image" />
-              <img loading="lazy" src="images/banner-production.png" alt="Hero Banner Production" class="hero-banner-image" />
-              <img loading="lazy" src="images/banner-design-services.png" alt="Hero Banner Design Services" class="hero-banner-image" />
-            </div>
-            <button class="slider-btn prev" aria-label="Sebelumnya">
-              <span>‹</span>
-            </button>
-            <button class="slider-btn next" aria-label="Selanjutnya">
-              <span>›</span>
-            </button>
-            <div class="slider-dots" role="tablist" aria-label="Navigasi slide"></div>
-          </div>
-        </div>
-        <div class="hero-bg" aria-hidden="true"></div>
-      </section>
-
-      <!-- Vision & Mission Section-->
-      <section class="vision-section" id="vision">
-        <div class="container">
-          <div class="vision">
-              <div class="vision-title">VISION <span>&</span> MISSION</div>
-              <div class="vm-grid">
-                <article class="vm-card">
-                  <h3 class="vm-heading">Our Vision</h3>
-                  <p class="vm-text">
-                    To redefine the way brands connect with their audience using the power of light, creativity, and strategic marketing to inspire a brighter future.
-                  </p>
-                  <div class="vm-art vm-left" aria-hidden="true">
-                    <svg viewBox="0 0 160 80" xmlns="http://www.w3.org/2000/svg">
-                      <defs>
-                        <linearGradient id="vv1" x1="0" y1="1" x2="1" y2="0">
-                          <stop offset="0%" stop-color="#22d3ee"/>
-                          <stop offset="100%" stop-color="#7c3aed"/>
-                        </linearGradient>
-                      </defs>
-                      <circle cx="120" cy="26" r="14" fill="#fbbf24"/>
-                      <rect x="12" y="40" width="24" height="12" rx="6" fill="url(#vv1)"/>
-                      <path d="M40 54 L72 38 L92 46" stroke="url(#vv1)" stroke-width="6" fill="none"/>
-                    </svg>
-                  </div>
-                </article>
-                <article class="vm-card">
-                  <h3 class="vm-heading alt">Our Mission</h3>
-                  <p class="vm-text">
-                    We transform ideas into immersive experiences and elevate brands through innovative solutions, driving our clients’ success with passion and precision.
-                  </p>
-                  <div class="vm-art vm-right" aria-hidden="true">
-                    <svg viewBox="0 0 160 80" xmlns="http://www.w3.org/2000/svg">
-                      <defs>
-                        <linearGradient id="vv2" x1="0" y1="1" x2="1" y2="0">
-                          <stop offset="0%" stop-color="#fb7185"/>
-                          <stop offset="100%" stop-color="#f59e0b"/>
-                        </linearGradient>
-                      </defs>
-                      <circle cx="56" cy="40" r="18" fill="url(#vv2)" opacity=".25"/>
-                      <path d="M12 56 L36 44 L60 50 L84 34 L108 40" stroke="url(#vv2)" stroke-width="6" fill="none"/>
-                      <rect x="114" y="30" width="18" height="18" rx="4" fill="#60a5fa"/>
-                    </svg>
-                  </div>
-                </article>
-              </div>
-              <div class="vm-pill">Illuminating Your Brand, Elevating Your Success</div>
-            </div>
-        </div>
-      </section>
-
-      <!-- About Us Section -->
-      <section class="about" id="about" aria-label="About Us">
-        <div class="container">
-          <div class="section-tag">About Us</div>
-          <div class="about-grid">
-            <div class="about-visual" aria-hidden="true">
-              <img loading="lazy" width="520" height="360" src="images/home-banner.png" alt="About Visual" style="border-radius:14px" />
-            </div>
-            <div class="about-card">
-              <div class="chip">Nawasangga</div>
-              <h2>
-                Nawasangga is: <span>A trusted partner in delivering innovative and creative business solutions</span>
-              </h2>
-              <p class="lead">
-                We combine expertise, technology, and creativity to help your business thrive with solutions tailored to your unique needs.
+    <!-- Vision & Mission Section-->
+    <section class="vision-section" id="vision">
+      <div class="container">
+        <div class="vision">
+          <div class="vision-title">VISION <span>&</span> MISSION</div>
+          <div class="vm-grid">
+            <article class="vm-card">
+              <h3 class="vm-heading">Our Vision</h3>
+              <p class="vm-text">
+                To redefine the way brands connect with their audience using the power of light, creativity, and
+                strategic marketing to inspire a brighter future.
               </p>
-              <ul class="feature-list">
-                <li>
-                  <span class="icon">
-                    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l1.8 4.8L19 8.2l-4 3.3L16 17l-4-2.6L8 17l1.9-5.5-4-3.3 5.2-1.4z"/></svg>
-                  </span>
-                  <div>
-                    <strong>Innovative Approach</strong>
-                    <p>We provide cutting‑edge solutions to keep your business ahead of the competition.</p>
-                  </div>
-                </li>
-                <li>
-                  <span class="icon">
-                    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5Zm0 2c-4 0-7 2-7 4v2h14v-2c0-2-3-4-7-4z"/></svg>
-                  </span>
-                  <div>
-                    <strong>Expert Team</strong>
-                    <p>Our experienced professionals are dedicated to ensuring your success.</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
+              <div class="vm-art vm-left" aria-hidden="true">
+                <svg viewBox="0 0 160 80" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="vv1" x1="0" y1="1" x2="1" y2="0">
+                      <stop offset="0%" stop-color="#22d3ee" />
+                      <stop offset="100%" stop-color="#7c3aed" />
+                    </linearGradient>
+                  </defs>
+                  <circle cx="120" cy="26" r="14" fill="#fbbf24" />
+                  <rect x="12" y="40" width="24" height="12" rx="6" fill="url(#vv1)" />
+                  <path d="M40 54 L72 38 L92 46" stroke="url(#vv1)" stroke-width="6" fill="none" />
+                </svg>
+              </div>
+            </article>
+            <article class="vm-card">
+              <h3 class="vm-heading alt">Our Mission</h3>
+              <p class="vm-text">
+                We transform ideas into immersive experiences and elevate brands through innovative solutions, driving
+                our clients’ success with passion and precision.
+              </p>
+              <div class="vm-art vm-right" aria-hidden="true">
+                <svg viewBox="0 0 160 80" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="vv2" x1="0" y1="1" x2="1" y2="0">
+                      <stop offset="0%" stop-color="#fb7185" />
+                      <stop offset="100%" stop-color="#f59e0b" />
+                    </linearGradient>
+                  </defs>
+                  <circle cx="56" cy="40" r="18" fill="url(#vv2)" opacity=".25" />
+                  <path d="M12 56 L36 44 L60 50 L84 34 L108 40" stroke="url(#vv2)" stroke-width="6" fill="none" />
+                  <rect x="114" y="30" width="18" height="18" rx="4" fill="#60a5fa" />
+                </svg>
+              </div>
+            </article>
           </div>
-      </section>
-
-      <!-- Contact Us Section -->
-      <section class="contact">
-        <h2>Contact Us</h2>
-        <p class="subtitle">Reach us anytime — our team is ready to help</p>
-
-        <div class="contact-grid">
-            <div class="contact-card">
-            <span class="icon phone"></span>
-            <small>Phone / WhatsApp</small>
-            <strong>0815 8639 3993</strong>
-            </div>
-
-            <div class="contact-card">
-            <span class="icon email"></span>
-            <small>Email</small>
-            <strong>ahmad@nawasangga.co.id</strong>
-            </div>
-        </div>
-
-        <a href="https://wa.me/6281586393993?text=Halo%20Tim%20Nawasangga,%20Saya%20ingin%20mendapatkan%20konsultasi%20gratis." target="_blank" rel="noopener noreferrer" class="cta">
-            Chat via WhatsApp
-        </a>
-        </section>
-    </main>
-
-    <!-- Footer section -->
-    <footer class="site-footer" id="contact">
-      <div class="container footer-inner">
-        <div class="footer-brand">
-          <img loading="lazy" src="images/ic-logo-ns-transparan.png" alt="Nawasangga" />
-          <div class="footer-text-vertical">
-            <p>Innovative & Creative Business Solutions</p>
-            <p>&copy; 2025 NAWASANGGA. All rights reserved.</p>
-          </div>
-        </div>
-        <div class="footer-cta">
-          <a href="mailto:ahmad@nawasangga.co.id" class="btn btn-cta invert">Let’s Talk</a>
+          <div class="vm-pill">Illuminating Your Brand, Elevating Your Success</div>
         </div>
       </div>
-    </footer>
-    <script src="script.js"></script>
-    <script src="load-components.js"></script>
-  </body>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about" id="about" aria-label="About Us">
+      <div class="container">
+        <div class="section-tag">About Us</div>
+        <div class="about-grid">
+          <div class="about-visual" aria-hidden="true">
+            <img loading="lazy" width="520" height="360" src="images/home-banner.png" alt="About Visual"
+              style="border-radius:14px" />
+          </div>
+          <div class="about-card">
+            <div class="chip">Nawasangga</div>
+            <h2>
+              Nawasangga is: <span>A trusted partner in delivering innovative and creative business solutions</span>
+            </h2>
+            <p class="lead">
+              We combine expertise, technology, and creativity to help your business thrive with solutions tailored to
+              your unique needs.
+            </p>
+            <ul class="feature-list">
+              <li>
+                <span class="icon">
+                  <svg viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                      d="M12 2l1.8 4.8L19 8.2l-4 3.3L16 17l-4-2.6L8 17l1.9-5.5-4-3.3 5.2-1.4z" />
+                  </svg>
+                </span>
+                <div>
+                  <strong>Innovative Approach</strong>
+                  <p>We provide cutting‑edge solutions to keep your business ahead of the competition.</p>
+                </div>
+              </li>
+              <li>
+                <span class="icon">
+                  <svg viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                      d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5Zm0 2c-4 0-7 2-7 4v2h14v-2c0-2-3-4-7-4z" />
+                  </svg>
+                </span>
+                <div>
+                  <strong>Expert Team</strong>
+                  <p>Our experienced professionals are dedicated to ensuring your success.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <p class="subtitle">Reach us anytime — our team is ready to help</p>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <span class="icon phone"></span>
+          <small>Phone / WhatsApp</small>
+          <strong>0815 8639 3993</strong>
+        </div>
+
+        <div class="contact-card">
+          <span class="icon email"></span>
+          <small>Email</small>
+          <strong>ahmad@nawasangga.co.id</strong>
+        </div>
+      </div>
+
+      <a href="https://wa.me/6281586393993?text=Halo%20Tim%20Nawasangga,%20Saya%20ingin%20mendapatkan%20konsultasi%20gratis."
+        target="_blank" rel="noopener noreferrer" class="cta">
+        Chat via WhatsApp
+      </a>
+    </section>
+  </main>
+
+  <!-- Footer section -->
+  <footer class="site-footer" id="contact">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img loading="lazy" src="images/ic-logo-ns-transparan.png" alt="Nawasangga" />
+        <div class="footer-text-vertical">
+          <p>Innovative & Creative Business Solutions</p>
+          <p>&copy; 2025 NAWASANGGA. All rights reserved.</p>
+        </div>
+      </div>
+      <div class="footer-cta">
+        <a href="mailto:ahmad@nawasangga.co.id" class="btn btn-cta invert">Let’s Talk</a>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="load-components.js"></script>
+</body>
+
 </html>
