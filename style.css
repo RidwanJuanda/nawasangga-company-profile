@@ -151,7 +151,7 @@ body {
 }
 
 .btn-outline {
-  background: #fff;
+  background: #F59E0B;
   color: var(--text);
   border: 2px solid rgba(99, 102, 241, 0.25);
 }
@@ -825,6 +825,7 @@ body {
 .services-header h2 span {
   background: linear-gradient(90deg, #38bdf8, #7c3aed);
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 
