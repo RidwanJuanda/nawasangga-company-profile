@@ -137,6 +137,8 @@ body {
 .btn-cta {
   background: linear-gradient(90deg, var(--accent), var(--primary));
   color: #fff;
+  align-items: center;
+  justify-content: center;
   border: none;
 }
 
@@ -646,7 +648,7 @@ body {
 
 html,
 body {
-  height: 100%;
+  min-height: 100vh;
 }
 
 body {
@@ -694,6 +696,7 @@ body {
 }
 
 .btn-cta {
+  align-self: center;
   background: linear-gradient(90deg, var(--accent), var(--primary));
   color: #fff;
   border: none;
@@ -708,7 +711,7 @@ body {
   border-bottom: 1px solid rgba(2, 6, 23, 0.06);
 }
 
-.header-inner {
+.nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -980,6 +983,8 @@ body {
 
   /* Shrink header action button on mobile */
   .site-header .btn-cta {
+    align-self: center;
+    /* Override flex-start from more specific selectors */
     padding: 8px 12px;
     font-size: 13px;
     line-height: 1.1;

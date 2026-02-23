@@ -25,21 +25,29 @@ const updateActiveNav = () => {
       try {
         const el = document.querySelector(targetHash);
         if (el) pageSections.push({ link, el, targetHash });
-      } catch (e) {}
+      } catch (e) { }
     }
   });
 
   let activeLink = null;
-  const scrollPos = window.scrollY + Math.max(120, window.innerHeight / 3);
+  const triggerLine = window.innerHeight * 0.4;
 
   if (pageSections.length > 0) {
-    let currentSection = null;
+    let currentSection = pageSections[0];
     pageSections.forEach((item) => {
-      const topOffset = item.el.getBoundingClientRect().top + window.scrollY;
-      if (scrollPos >= topOffset) {
+      const rect = item.el.getBoundingClientRect();
+      if (rect.top <= triggerLine) {
         currentSection = item;
       }
     });
+
+    if (Math.ceil(window.scrollY + window.innerHeight) >= document.documentElement.scrollHeight - 10) {
+      const urlHash = window.location.hash;
+      if (!urlHash || currentSection.targetHash !== urlHash) {
+        currentSection = pageSections[pageSections.length - 1];
+      }
+    }
+
     if (currentSection) {
       activeLink = currentSection.link;
     }
@@ -129,6 +137,7 @@ window.addEventListener("load", () => {
       if (el) {
         const y = el.getBoundingClientRect().top + window.scrollY - 72;
         window.scrollTo({ top: y, behavior: "smooth" });
+        setTimeout(updateActiveNav, 50); // Give the browser a moment to smooth scroll then update the active nav
       }
     }, 100);
   }
