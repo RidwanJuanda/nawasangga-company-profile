@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promo Spesial - ERFOLGS PRODUCTION</title>
+    <link rel="icon" type="image/png" href="images/erfo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo" style="text-decoration: none;">
+                    <img src="images/erfo.png" alt="ERFOLGS PRODUCTION Logo" class="logo-image">
+                    <div class="logo-text-container">
+                        <h2 class="logo-text">ERFOLGS PRODUCTION</h2>
+                        <p class="logo-tagline">Solusi Cetak DTF Terpercaya</p>
+                    </div>
+                </a>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="nav" id="mainNav">
+                    <a href="index.html#layanan" class="nav-link">LAYANAN KAMI</a>
+                    <a href="promo.html" class="nav-link">PROMO SPESIAL</a>
+                    <a href="portfolio.html" class="nav-link">PORTFOLIO</a>
+                    <a href="index.html#tentang" class="nav-link">TENTANG KAMI & KONTAK</a>
+                    <a href="https://wa.me/+6282261460088" target="_blank" class="btn-scan-mobile">SCAN UNTUK CHAT</a>
+                </nav>
+                <a href="https://wa.me/+6282261460088" target="_blank" class="btn-scan">SCAN UNTUK CHAT</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Promo Section -->
+    <section id="promo" class="promo-section">
+        <div class="container">
+            <h2 class="section-title">Harga Hemat Kualitas Hebat - Promo Spesial Kami</h2>
+            <div class="promo-grid">
+                <div class="promo-card promo-card-featured">
+                    <div class="promo-price">Rp 20.000 /</div>
+                    <div class="promo-unit">Meter</div>
+                    <p class="promo-desc">Area Cetak 50cm x 100cm</p>
+                    <p class="promo-desc-small">Spesial untuk order minimal 10 meter</p>
+                </div>
+                <div class="promo-card">
+                    <div class="promo-icon">🎁</div>
+                    <h3 class="promo-card-title">Diskon Kuantitas Besar</h3>
+                    <p class="promo-card-desc">
+                        Order di atas 10 meter dapat diskon hingga 10%. 
+                        Semakin banyak order, semakin besar diskon yang Anda dapatkan.
+                    </p>
+                </div>
+                <div class="promo-card">
+                    <div class="promo-icon">🚚</div>
+                    <h3 class="promo-card-title">Gratis Ongkir Seluruh Jawa</h3>
+                    <p class="promo-card-desc">
+                        Order di atas 50 meter untuk free shipping ke seluruh Jawa. 
+                        Hemat biaya pengiriman dengan order besar.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estimation Section -->
+    <section class="estimation-section">
+        <div class="container">
+            <h2 class="section-title">Hitung Estimasi Biaya Cetak Anda</h2>
+            <div class="estimation-content">
+                <div class="estimation-left">
+                    <div class="free-design-box">
+                        <div class="design-icon">✏️</div>
+                        <h3 class="free-design-title">FREE DESIGN SESUKAMU!</h3>
+                        <p class="free-design-desc">
+                            Kami bantu wujudkan design impian Anda dengan konsultasi gratis. 
+                            Tim design kami siap membantu mewujudkan ide kreatif Anda menjadi 
+                            design yang siap cetak dengan kualitas terbaik.
+                        </p>
+                    </div>
+                </div>
+                <div class="estimation-center">
+                    <form class="estimation-form" id="estimationForm">
+                        <div class="form-group">
+                            <label for="fullName">Nama Lengkap</label>
+                            <input type="text" id="fullName" name="fullName" placeholder="Masukkan nama lengkap" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="whatsapp">Nomor WhatsApp</label>
+                            <input type="number" id="whatsapp" name="whatsapp" placeholder="08xxxxxxxxxx" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="meters">Jumlah Meter Cetak</label>
+                            <input type="number" id="meters" name="meters" placeholder="Contoh: 10" min="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="category">Kategori</label>
+                            <select id="category" name="category" required>
+                                <option value="">Pilih Kategori</option>
+                                <option value="kaos">Kaos</option>
+                                <option value="hoodie">Hoodie</option>
+                                <option value="tas">Tas</option>
+                                <option value="jaket">Jaket</option>
+                                <option value="lainnya">Lainnya</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn-estimate-submit">HITUNG & KONSULTASI VIA WA</button>
+                    </form>
+                </div>
+                <div class="estimation-right">
+                    <div class="qr-code-box">
+                        <div class="qr-code-placeholder">
+                            <img src="images/qr-erfo-wa.png" alt="QR Code WhatsApp ERFOLGS PRODUCTION" class="qr-code-image">
+                        </div>
+                        <p class="qr-desc">Scan QR Code untuk langsung chat via WhatsApp</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 ERFOLGS PRODUCTION. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="promo-script.js"></script>
+</body>
+</html>
+

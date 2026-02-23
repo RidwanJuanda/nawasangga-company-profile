@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - ERFOLGS PRODUCTION</title>
+    <link rel="icon" type="image/png" href="images/erfo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <!-- <div id="header-placeholder"></div> gunakan ini untuk load header jika ingin menggunakan header dari file lain--> 
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo" style="text-decoration: none;">
+                    <img src="images/erfo.png" alt="ERFOLGS PRODUCTION Logo" class="logo-image">
+                    <div class="logo-text-container">
+                        <h2 class="logo-text">ERFOLGS PRODUCTION</h2>
+                        <p class="logo-tagline">Solusi Cetak DTF Terpercaya</p>
+                    </div>
+                </a>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="nav" id="mainNav">
+                    <a href="index.html#layanan" class="nav-link">LAYANAN KAMI</a>
+                    <a href="promo.html" class="nav-link">PROMO SPESIAL</a>
+                    <a href="portfolio.html" class="nav-link">PORTFOLIO</a>
+                    <a href="index.html#tentang" class="nav-link">TENTANG KAMI & KONTAK</a>
+                    <a href="https://wa.me/+6282261460088" target="_blank" class="btn-scan-mobile">KLIK UNTUK CHAT</a>
+                </nav>
+                <a href="https://wa.me/+6282261460088" target="_blank" class="btn-scan">KLIK UNTUK CHAT</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Portfolio Gallery Section -->
+    <section class="portfolio-gallery">
+        <div class="container">
+            <h2 class="section-title">Hasil Terbaik Kami</h2>
+            
+            <!-- Filter Tabs -->
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="sonmua">Sonmua</button>
+                <button class="filter-btn" data-filter="dedle">Dedle</button>
+                <button class="filter-btn" data-filter="taet">Taet</button>
+                <button class="filter-btn" data-filter="monscare">Monscare</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="all">
+                    <img src="images/dragon-design.png" alt="Dragon Design" class="portfolio-image">
+                    <p class="portfolio-label">Dragon Design</p>
+                </div>
+                <div class="portfolio-item" data-category="all sonmua">
+                    <img src="images/dark-tshirt.png" alt="Ecsios Collection" class="portfolio-image">
+                    <p class="portfolio-label">Ecsios Collection</p>
+                </div>
+                <div class="portfolio-item" data-category="all dedle">
+                    <img src="images/cornel-man.png" alt="Contemporary Design" class="portfolio-image">
+                    <p class="portfolio-label">Contemporary Design</p>
+                </div>
+                <div class="portfolio-item" data-category="all taet">
+                    <img src="images/dragon-design.png" alt="Life's But Collection" class="portfolio-image">
+                    <p class="portfolio-label">Life's But Collection</p>
+                </div>
+                <div class="portfolio-item" data-category="all monscare">
+                    <img src="images/dev-tones.png" alt="Skdhoo Collection" class="portfolio-image">
+                    <p class="portfolio-label">Skdhoo Collection</p>
+                </div>
+                <div class="portfolio-item" data-category="all sonmua">
+                    <img src="images/ecsios.jpg" alt="Eovrteles Design" class="portfolio-image">
+                    <p class="portfolio-label">Eovrteles Design</p>
+                </div>
+                <div class="portfolio-item" data-category="all dedle">
+                    <img src="images/dev-tones.png" alt="Rave Show Collection" class="portfolio-image">
+                    <p class="portfolio-label">Rave Show Collection</p>
+                </div>
+                <div class="portfolio-item" data-category="all taet">
+                    <img src="images/cornel-man.png" alt="Design Collection" class="portfolio-image">
+                    <p class="portfolio-label">Design Collection</p>
+                </div>
+                <!-- <div class="portfolio-item" data-category="all monscare">
+                    <img src="images/dragon-design.png" alt="Modern Design" class="portfolio-image">
+                    <p class="portfolio-label">Modern Design</p>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Modal/Popup -->
+    <div id="imageModal" class="image-modal">
+        <span class="modal-close">&times;</span>
+        <div class="modal-content-wrapper">
+            <img id="modalImage" class="modal-image" src="" alt="Portfolio Image">
+        </div>
+    </div>
+
+    <!-- Footer -->
+     <!-- <div id="footer-placeholder"></div> gunakan ini untuk load footer jika ingin menggunakan footer dari file lain--> 
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 ERFOLGS PRODUCTION. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="portfolio-script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,59 @@
+1. Color Palette (Brand & UI)
+    Primary Gradient (Hero & Section Background)
+    Digunakan di hero, footer, dan section divider
+    Cyan / Teal → #2ECAD5
+    Sky Blue → #5BC0EB
+    Soft Purple → #8B5CF6
+    Magenta / Pink → #EC4899
+    Orange Accent → #F59E0B
+
+    Neutral Colors (Text & Layout)
+    Primary Text (judul) → #1F2937
+    Body Text → #475569
+    Muted Text → #94A3B8
+    Background Putih → #FFFFFF
+    Soft Section BG → #F8FAFC
+
+2. Typography
+    Font Family
+    Primary: Outfit (sans-serif, modern & geometric)
+    Secondary: Inter (sans-serif, readable body text)
+    Font Weights
+    Headings: 600, 700, 800
+    Body: 400, 500
+    Line Height
+    Headings: 1.2 - 1.4
+    Body: 1.6 - 1.8
+
+3. Layout & Spacing
+    Container Width
+    Max-width: 1200px (centered)
+    Padding: 20px on mobile, 40px on desktop
+    Section Spacing
+    Hero: 80px top/bottom
+    Content Sections: 60px top/bottom
+    Footer: 40px top/bottom
+    Card Padding
+    Service/Promo Cards: 24px
+    Portfolio Items: 16px
+
+4. Visual Elements
+    Hero Section
+    Background: Linear gradient (Cyan → Sky Blue → Soft Purple)
+    Overlay: Subtle noise texture (opacity 0.05)
+    Typography: Large, bold headings with gradient text
+    CTA Button: Gradient fill with hover lift effect
+    Section Dividers
+    Curved wave shape between sections
+    Gradient fill with soft shadow
+    Card Design
+    Soft rounded corners (16px)
+    Subtle drop shadow
+    Gradient border on hover
+    Iconography
+    Use line icons with rounded stroke style
+    Color: Primary gradient or solid accent color
+    Hover Effects
+    Buttons: Lift + gradient overlay
+    Cards: Scale up + border glow
+    Links: Underline reveal animation
