@@ -315,3 +315,58 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+// Products filter logic
+document.addEventListener("DOMContentLoaded", () => {
+  const tabBtns = document.querySelectorAll(".category-tabs .tab-btn");
+  const productCards = document.querySelectorAll(".products-grid .product-card");
+
+  if (tabBtns.length > 0 && productCards.length > 0) {
+    tabBtns.forEach(btn => {
+      btn.addEventListener("click", () => {
+        // Remove active class from all tabs
+        tabBtns.forEach(t => t.classList.remove("active"));
+        // Add active class to clicked tab
+        btn.classList.add("active");
+
+        const category = btn.getAttribute("data-category");
+
+        // Filter products
+        productCards.forEach(card => {
+          if (category === "all" || card.getAttribute("data-category") === category) {
+            card.style.display = "flex"; // Card is flexbox, so restoring its original form
+          } else {
+            card.style.display = "none";
+          }
+        });
+      });
+    });
+  }
+});
+
+// See More functionality for product descriptions
+document.addEventListener("DOMContentLoaded", () => {
+  const productPrices = document.querySelectorAll(".product-price");
+
+  productPrices.forEach(p => {
+    // Only add 'See more' if text is more than just a typical short price length (e.g. > 50 chars)
+    if (p.textContent.trim().length > 50) {
+      const btn = document.createElement("button");
+      btn.className = "see-more-btn";
+      btn.textContent = "See more";
+
+      // Insert after the paragraph
+      p.parentNode.insertBefore(btn, p.nextSibling);
+
+      btn.addEventListener("click", () => {
+        if (p.classList.contains("expanded")) {
+          p.classList.remove("expanded");
+          btn.textContent = "See more";
+        } else {
+          p.classList.add("expanded");
+          btn.textContent = "See less";
+        }
+      });
+    }
+  });
+});
