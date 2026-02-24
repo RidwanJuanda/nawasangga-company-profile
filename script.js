@@ -370,3 +370,28 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+// Image Zoom functionality
+window.openImageZoom = (imgSrc, titleText) => {
+  const modal = document.getElementById('imageZoomModal');
+  const img = document.getElementById('zoomedImage');
+  const title = document.getElementById('zoomedTitle');
+
+  if (modal && img && title) {
+    img.src = imgSrc;
+    title.textContent = titleText;
+    openPopup('imageZoomModal');
+  }
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+  const productImages = document.querySelectorAll('.product-image img');
+  productImages.forEach(img => {
+    img.style.cursor = 'pointer';
+    img.addEventListener('click', function () {
+      const card = this.closest('.product-card');
+      const title = card ? card.querySelector('.product-title').textContent : this.alt;
+      openImageZoom(this.src, title);
+    });
+  });
+});
