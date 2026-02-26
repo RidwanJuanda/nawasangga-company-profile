@@ -1342,6 +1342,7 @@ body {
 
 /* ---------- Card ---------- */
 .service-card {
+  text-align: justify;
   background: linear-gradient(180deg,
       rgba(255, 255, 255, 0.96),
       rgba(255, 255, 255, 0.9));
@@ -1725,7 +1726,7 @@ body {
 .modal-slide img {
   width: 100%;
   height: 80%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
 }
 
