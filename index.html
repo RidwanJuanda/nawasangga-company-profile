@@ -151,9 +151,16 @@
       <div class="container">
         <div class="section-tag">About Us</div>
         <div class="about-grid">
-          <div class="about-visual" aria-hidden="true">
-            <img loading="lazy" width="520" height="360" src="images/home-banner.png" alt="About Visual"
+          <div class="about-visual" onclick="openVideoPopup('videoModal')" aria-label="Play About Video">
+            <img loading="lazy" width="520" height="360" src="images/img-cover-video.png" alt="About Visual"
               style="border-radius:14px" />
+            <div class="play-button-overlay">
+              <div class="play-button">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              </div>
+            </div>
           </div>
           <div class="about-card">
             <div class="chip">NAWASANGGA</div>
@@ -430,14 +437,30 @@
         </a>
 
         <!-- Sparkles Sparkles Sparkles -->
-        <div class="sparkles" aria-hidden="true">
+        <!-- <div class="sparkles" aria-hidden="true">
           <div class="sparkle s1"></div>
           <div class="sparkle s2"></div>
           <div class="sparkle s3"></div>
           <div class="sparkle s4"></div>
-        </div>
+        </div> -->
       </div>
     </section>
+
+    <!-- Video Popup Modal -->
+    <div class="modal-overlay" id="videoModal">
+      <div class="modal-content video-modal">
+        <button class="modal-close" onclick="closeVideoPopup('videoModal')" aria-label="Close video popup">
+          &times;
+        </button>
+        <div class="video-container">
+          <video id="aboutVideo" controls playsinline webkit-playsinline>
+            <source src="videos/video-nawasangga-allscene.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <!-- <p class="video-caption">Click "play" button control above, then...</p> -->
+      </div>
+    </div>
   </main>
 
   <!-- Footer section -->

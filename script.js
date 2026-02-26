@@ -305,12 +305,41 @@ window.moveSlide = (slidesId, direction) => {
   slidesContainer.style.transform = `translateX(-${newIndex * 100}%)`;
 };
 
+window.openVideoPopup = (id) => {
+  const modal = document.getElementById(id);
+  if (modal) {
+    modal.classList.add("show");
+    document.body.style.overflow = "hidden";
+    const video = modal.querySelector("video");
+    if (video) {
+      video.play();
+    }
+  }
+};
+
+window.closeVideoPopup = (id) => {
+  const modal = document.getElementById(id);
+  if (modal) {
+    modal.classList.remove("show");
+    document.body.style.overflow = "";
+    const video = modal.querySelector("video");
+    if (video) {
+      video.pause();
+      video.currentTime = 0;
+    }
+  }
+};
+
 // Close modal when clicking outside content
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".modal-overlay").forEach((overlay) => {
     overlay.addEventListener("click", (e) => {
       if (e.target === overlay) {
-        closePopup(overlay.id);
+        if (overlay.id === "videoModal") {
+          closeVideoPopup(overlay.id);
+        } else {
+          closePopup(overlay.id);
+        }
       }
     });
   });
