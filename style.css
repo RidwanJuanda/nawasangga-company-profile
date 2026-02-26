@@ -1362,8 +1362,8 @@ body {
 
 .service-card img {
   width: 100%;
-  height: auto;
-  border-radius: 10px;
+  aspect-ratio: 16/10;
+  border-radius: 20px;
   object-fit: cover;
   margin-bottom: 18px;
 }
@@ -1422,8 +1422,17 @@ body {
 
 /* ---------- Responsive ---------- */
 @media (max-width: 860px) {
+  .services {
+    padding: 48px 0;
+  }
+
   .services-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .services-cta {
+    margin-top: 32px;
   }
 }
 

@@ -71,22 +71,25 @@
       <div class="container">
         <div class="services-grid">
           <article class="service-card">
-            <img loading="lazy" src="images/banner-led-videotron.png" alt="LED Display" />
-            <h3 class="blue">LED Display Solutions</h3>
+            <img loading="lazy" src="images/services/led-videotron/img-led1.png" alt="LED Display" />
+            <h3 class="blue">LED Videotron</h3>
             <p>
-              High-quality LED display solutions for advertising and events.
+              A giant digital screen made up of thousands or even millions of LED (Light Emitting Diode) lights. Unlike
+              a regular TV, a videotron is modular—meaning it's built from small panels that can be joined together to
+              form any desired size without limit.
             </p>
             <a href="javascript:void(0)" class="btn blue" onclick="openPopup('ledPopup')">Learn More</a>
           </article>
 
           <article class="service-card">
-            <img loading="lazy" src="images/banner-production.png" alt="Event Production" />
-            <h3 class="purple">Event Production</h3>
+            <img loading="lazy" src="images/services/billboard/img-billboard.png" alt="Billboard" />
+            <h3 class="purple">Billboard</h3>
             <p>
-              Comprehensive event production services from planning to
-              execution.
+              A billboard is technically a large-scale outdoor advertising structure (OOH) designed to attract the
+              attention of motorists and pedestrians. In the modern era, billboards have evolved from simple printed
+              boards to interactive digital displays.
             </p>
-            <a href="javascript:void(0)" class="btn purple" onclick="openPopup('eventProductionPopup')">Learn More</a>
+            <a href="javascript:void(0)" class="btn purple" onclick="openPopup('billboardPopup')">Learn More</a>
           </article>
 
           <article class="service-card">
@@ -143,7 +146,7 @@
           <div class="modal-slides" id="ledSlides">
             <!-- Slide 1 -->
             <div class="modal-slide">
-              <img loading="lazy" src="images/led-videotron/img-led1.png" alt="Videotron" />
+              <img loading="lazy" src="images/services/led-videotron/img-led2.png" alt="Videotron" />
               <h4>Videotron Installation</h4>
               <p>
                 High quality outdoor and indoor videotron displays for
@@ -152,20 +155,11 @@
             </div>
             <!-- Slide 2 -->
             <div class="modal-slide">
-              <img loading="lazy" src="images/led-videotron/img-led2.png" alt="Billboard LED" />
+              <img loading="lazy" src="images/services/led-videotron/img-led3.png" alt="Billboard LED" />
               <h4>LED Billboards</h4>
               <p>
                 Dynamic LED billboard solutions that ensure maximum visibility
                 day and night for your brand.
-              </p>
-            </div>
-            <!-- Slide 3 -->
-            <div class="modal-slide">
-              <img loading="lazy" src="images/led-videotron/img-led3.png" alt="Event LED" />
-              <h4>Event LED Backdrop</h4>
-              <p>
-                Custom LED screen setups designed specifically for concerts,
-                conferences, and live events to elevate the stage.
               </p>
             </div>
           </div>
@@ -179,46 +173,37 @@
       </div>
     </div>
 
-    <!-- Events Solutions Popup Modal -->
-    <div class="modal-overlay" id="eventProductionPopup">
+    <!-- Billboard Popup Modal -->
+    <div class="modal-overlay" id="billboardPopup">
       <div class="modal-content">
-        <button class="modal-close" onclick="closePopup('eventProductionPopup')" aria-label="Close popup">
+        <button class="modal-close" onclick="closePopup('billboardPopup')" aria-label="Close popup">
           &times;
         </button>
         <div class="modal-slider-container">
-          <div class="modal-slides" id="eventProductionSlides">
+          <div class="modal-slides" id="billboardSlides">
             <!-- Slide 1 -->
             <div class="modal-slide">
-              <img loading="lazy" src="images/led-videotron/img-led1.png" alt="Videotron" />
-              <h4>Videotron Installation</h4>
+              <img loading="lazy" src="images/services/billboard/img-billboard1.png" alt="Videotron" />
+              <h4>Billboard Iklan di Kawasan Perkotaan Ramai Lalu Lintas</h4>
               <p>
-                High quality outdoor and indoor videotron displays for
-                impactful advertising that grabs attention instantly.
+                Digital billboards installed on main city roads with heavy traffic are ideal for increasing brand
+                visibility and exposure to road users.
               </p>
             </div>
             <!-- Slide 2 -->
             <div class="modal-slide">
-              <img loading="lazy" src="images/led-videotron/img-led2.png" alt="Billboard LED" />
-              <h4>LED Billboards</h4>
+              <img loading="lazy" src="images/services/billboard/img-billboard2.png" alt="Billboard LED" />
+              <h4>Billboard Vertikal di Jalan Perkotaan</h4>
               <p>
-                Dynamic LED billboard solutions that ensure maximum visibility
-                day and night for your brand.
-              </p>
-            </div>
-            <!-- Slide 3 -->
-            <div class="modal-slide">
-              <img loading="lazy" src="images/led-videotron/img-led3.png" alt="Event LED" />
-              <h4>Event LED Backdrop</h4>
-              <p>
-                Custom LED screen setups designed specifically for concerts,
-                conferences, and live events to elevate the stage.
+                Vertical billboards installed on city roads with active traffic are effective in attracting the
+                attention of drivers and pedestrians.
               </p>
             </div>
           </div>
-          <button class="modal-prev" aria-label="Previous image" onclick="moveSlide('eventProductionSlides', -1)">
+          <button class="modal-prev" aria-label="Previous image" onclick="moveSlide('billboardSlides', -1)">
             &#10094;
           </button>
-          <button class="modal-next" aria-label="Next image" onclick="moveSlide('eventProductionSlides', 1)">
+          <button class="modal-next" aria-label="Next image" onclick="moveSlide('billboardSlides', 1)">
             &#10095;
           </button>
         </div>
