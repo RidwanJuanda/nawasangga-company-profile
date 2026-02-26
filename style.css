@@ -388,6 +388,7 @@ body {
   border-radius: 12px;
   display: flex;
   align-items: center;
+  padding: 20px;
   justify-content: center;
   color: white;
   transition: background-color 0.2s ease, transform 0.2s ease;
