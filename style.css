@@ -2127,3 +2127,371 @@ body {
   margin: 0;
   font-size: 14px;
 }
+
+/* --- Company Verification Redesign --- */
+.cv-redesign {
+  --cv-blue: #38bdf8;
+  --cv-purple: #8b5cf6;
+  --cv-orange: #f59e0b;
+  --cv-text-dark: #1e293b;
+  --cv-text-muted: #64748b;
+  --cv-green-light: #dcfce7;
+  --cv-green-dark: #166534;
+  background-color: #f8fafc;
+  min-height: 100vh;
+}
+
+.cv-hero {
+  position: relative;
+  padding: 60px 0 120px;
+  background:
+    radial-gradient(circle at 10% 20%, rgba(56, 189, 248, 0.4), transparent 50%),
+    radial-gradient(circle at 90% 10%, rgba(139, 92, 246, 0.3), transparent 50%),
+    radial-gradient(circle at 50% 100%, rgba(245, 158, 11, 0.2), transparent 50%),
+    #f8fafc;
+  text-align: center;
+}
+
+.cv-hero-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto 60px;
+  padding: 0 20px;
+}
+
+.cv-brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-align: left;
+}
+
+.cv-brand img {
+  width: 80px;
+  height: 60px;
+  border-radius: 10px;
+}
+
+.cv-brand-info h2 {
+  font-size: 18px;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  margin: 0;
+  color: var(--cv-text-dark);
+}
+
+.cv-brand-info p {
+  font-size: 12px;
+  color: var(--cv-text-muted);
+  margin: 0;
+}
+
+.cv-status-badges {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.cv-badge {
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.cv-badge.status {
+  background: var(--cv-green-light);
+  color: var(--cv-green-dark);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cv-badge.status span {
+  font-weight: 800;
+}
+
+.cv-badge.legal {
+  color: #1e3a8a;
+}
+
+.cv-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.cv-hero-content h1 {
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 800;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #d946ef, #f97316);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cv-hero-content p {
+  font-size: 16px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.cv-hero-content .bold-text {
+  font-weight: 800;
+  color: #1e3a8a;
+}
+
+.cv-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  line-height: 0;
+}
+
+.cv-wave svg {
+  display: block;
+  width: 100%;
+  height: 80px;
+}
+
+.cv-main {
+  padding: 40px 0 80px;
+  position: relative;
+  margin-top: -60px;
+  z-index: 10;
+}
+
+.cv-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.cv-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+  height: fit-content;
+}
+
+.cv-card-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 20px;
+  font-weight: 800;
+  color: #1e3a8a;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #f1f5f9;
+  padding-bottom: 20px;
+}
+
+.cv-card-title i,
+.cv-card-title svg {
+  width: 36px;
+  height: 36px;
+  color: #1e3a8a;
+}
+
+.cv-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cv-info-row {
+  display: grid;
+  grid-template-columns: 40px 160px 10px 1fr;
+  align-items: center;
+  font-size: 14px;
+}
+
+.cv-info-icon {
+  width: 24px;
+  height: 24px;
+  color: #3b82f6;
+}
+
+.cv-info-label {
+  font-weight: 600;
+  color: #1e3a8a;
+}
+
+.cv-info-value {
+  color: #475569;
+  word-break: break-word;
+}
+
+.cv-status-pill {
+  display: inline-flex;
+  padding: 4px 12px;
+  background: var(--cv-green-light);
+  color: var(--cv-green-dark);
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.cv-status-pill::before {
+  content: "✓";
+  margin-right: 5px;
+}
+
+.cv-map-container {
+  margin-top: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  position: relative;
+}
+
+.cv-map-image {
+  width: 100%;
+  display: block;
+}
+
+.cv-map-overlay {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #fff;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #3b82f6;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+.cv-contact-card {
+  margin-top: 25px;
+}
+
+.cv-email-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(90deg, #3b82f6, #a855f7, #ec4899);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 12px;
+  transition: transform 0.2s;
+  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.3);
+}
+
+.cv-email-btn:hover {
+  transform: translateY(-2px);
+}
+
+.cv-footer {
+  padding: 40px 0;
+  text-align: center;
+  background: #fff;
+  border-top: 1px solid #f1f5f9;
+}
+
+.cv-footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.cv-copyright {
+  text-align: left;
+}
+
+.cv-copyright h3 {
+  font-size: 16px;
+  font-weight: 800;
+  color: #1e3a8a;
+  margin: 0 0 5px;
+}
+
+.cv-copyright p {
+  font-size: 12px;
+  color: #94a3b8;
+  font-style: italic;
+  margin: 0;
+}
+
+.cv-badges {
+  display: flex;
+  gap: 15px;
+  background: #e0f2fe;
+  padding: 15px 25px;
+  border-radius: 15px;
+}
+
+.cv-badge-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+}
+
+.cv-badge-item img {
+  width: 32px;
+  height: 32px;
+}
+
+.cv-badge-text {
+  line-height: 1.2;
+}
+
+.cv-badge-text .top {
+  display: block;
+  font-size: 12px;
+  font-weight: 800;
+  color: #1e3a8a;
+}
+
+.cv-badge-text .bottom {
+  display: block;
+  font-size: 10px;
+  color: #1e3a8a;
+}
+
+@media (max-width: 991px) {
+  .cv-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cv-hero-top {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .cv-brand {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cv-footer-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .cv-copyright {
+    text-align: center;
+  }
+}
