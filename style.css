@@ -471,6 +471,7 @@ body {
   width: 14px;
   height: 14px;
   color: #3b82f6;
+  flex-shrink: 0;
 }
 
 .about-card h2 {

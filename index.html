@@ -89,14 +89,14 @@
           <div class="hero-banner-slider" aria-label="Hero Slider">
             <img loading="eager" src="images/banner-led-videotron.png" alt="Hero Banner LED Videotron"
               class="hero-banner-image active" />
-            <img loading="eager" src="images/banner-billboard.png" alt="Hero Banner Billboard"
+            <img loading="lazy" src="images/banner-billboard.png" alt="Hero Banner Billboard"
               class="hero-banner-image" />
-            <img loading="eager" src="images/banner-events.png" alt="Hero Banner Events" class="hero-banner-image" />
-            <img loading="eager" src="images/banner-field-marketing.png" alt="Hero Banner Field Marketing"
+            <img loading="lazy" src="images/banner-events.png" alt="Hero Banner Events" class="hero-banner-image" />
+            <img loading="lazy" src="images/banner-field-marketing.png" alt="Hero Banner Field Marketing"
               class="hero-banner-image" />
-            <img loading="eager" src="images/banner-production.png" alt="Hero Banner Production"
+            <img loading="lazy" src="images/banner-production.png" alt="Hero Banner Production"
               class="hero-banner-image" />
-            <img loading="eager" src="images/banner-design-services.png" alt="Hero Banner Design Services"
+            <img loading="lazy" src="images/banner-design-services.png" alt="Hero Banner Design Services"
               class="hero-banner-image" />
           </div>
           <button class="slider-btn prev" aria-label="Sebelumnya">
@@ -183,8 +183,8 @@
             <div class="about-card-header">
               <div class="chip">NAWASANGGA</div>
               <a href="company-verification.html" class="btn-verify">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                  stroke-linejoin="round">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
                   <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                 </svg>
                 Company Verification
@@ -471,8 +471,8 @@
           &times;
         </button>
         <div class="video-container">
-          <video loading="eager" id="aboutVideo" controls playsinline webkit-playsinline>
-            <source loading="eager" src="videos/video-nawasangga-allscene.mp4" type="video/mp4">
+          <video id="aboutVideo" controls playsinline webkit-playsinline preload="metadata">
+            <source src="videos/video-nawasangga-allscene.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
         </div>
