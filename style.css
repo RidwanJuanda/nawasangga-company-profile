@@ -1426,7 +1426,7 @@ body {
   border-radius: 26px;
   padding: 26px;
   box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   transition:
     transform 0.25s ease,
