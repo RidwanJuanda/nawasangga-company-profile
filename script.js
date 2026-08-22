@@ -1,6 +1,6 @@
 const updateActiveNav = () => {
   const navLinks = Array.from(document.querySelectorAll(".nav-link"));
-  const currentPath = window.location.pathname.split("/").pop() || "index.html";
+  const currentPath = window.location.pathname.replace("/", "").split("/").pop() || "index.html";
   const currentHash = window.location.hash;
 
   navLinks.forEach((l) => l.classList.remove("active"));
@@ -64,19 +64,19 @@ const updateActiveNav = () => {
       return (
         targetPath === currentPath &&
         !href.includes("#") &&
-        currentPath !== "index.html"
+        currentPath !== "index.html" || "/"
       );
     });
 
     if (exactMatch) {
       activeLink = exactMatch;
     } else if (
-      currentPath === "index.html" &&
+      currentPath === "index.html" || "/" &&
       (!currentHash || currentHash === "")
     ) {
       activeLink = navLinks.find((l) => {
         const h = l.getAttribute("href") || "";
-        return h === "#home" || h === "index.html";
+        return h === "#home" || h === "index.html" || "/";
       });
     }
   }
@@ -93,7 +93,7 @@ window.addEventListener("hashchange", updateActiveNav);
 document.querySelectorAll("a").forEach((a) => {
   const href = a.getAttribute("href");
   if (!href) return;
-  const currentPath = window.location.pathname.split("/").pop() || "index.html";
+  const currentPath = window.location.pathname.split("/").pop() || "index.html" || "/";
 
   let isHashLinkForCurrentPage = false;
   let targetHash = "";
@@ -103,7 +103,7 @@ document.querySelectorAll("a").forEach((a) => {
     targetHash = href;
   } else if (href.includes("#")) {
     const parts = href.split("#");
-    const pathPart = parts[0].split("/").pop() || "index.html";
+    const pathPart = parts[0].split("/").pop() || "index.html" || "/";
     if (pathPart === currentPath) {
       isHashLinkForCurrentPage = true;
       targetHash = "#" + parts[1];
